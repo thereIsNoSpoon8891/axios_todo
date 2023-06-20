@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="todolist"> 
+        <input type="text" placeholder="Title" name="title">
+        <input type="text" placeholder="Price" name="price">
+        <input type="text" placeholder="Description" name="description">
+        <input type="text" placeholder="Image URL" name="img">
+        <button>Add item to list</button>
+    </form>
+
+    <form name="checkboxes">
+        <ul id="displayitem">
+            <!-- <input type="checkbox" value="completed"> -->
+        </ul>
+            <button>Submit completed Todos</button>
+    </form>
+    <br>
+    <button id="edit">Edit Todos</button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
