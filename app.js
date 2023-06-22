@@ -58,17 +58,17 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
     const checkBoxText = document.createElement('label')
     checkBoxText.setAttribute('for', 'putlist')
     checkBoxText.textContent = 'Mark this Todo complete'
-    checkBoxText.setAttribute('class', 'checkboxes')
+    checkBox.setAttribute('class', 'checkboxes')
     ulList.appendChild(checkBoxText)
     ulList.appendChild(checkBox)
     
     const breakText = document.createElement('br')// add break to put element at bottom of list
     ulList.appendChild(breakText)
     
-    const editButton = document.createElement('button')
-    editButton.textContent = `Edit`
-    editButton.setAttribute('id', data[i]._id + "0")
-    ulList.appendChild(editButton)
+    // const editButton = document.createElement('button')
+    // editButton.textContent = `Edit`
+    // editButton.setAttribute('id', data[i]._id + "0")
+    // ulList.appendChild(editButton)
     
     const removeButton = document.getElementById(data[i]._id)
     
@@ -91,7 +91,6 @@ function addEdit (data){
             e.preventDefault()
             editButtons.textContent = `Save`
             editButtons.setAttribute('id', 'clickedbutton')
-            saveData(data)
             
         })
     }
