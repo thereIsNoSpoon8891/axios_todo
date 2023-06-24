@@ -13,12 +13,15 @@ function listData(data){
 
 for (i = 0; i < data.length; i++){// loop through the array of objects and append them to the DOM
     
+    
+
     const ulList = document.createElement('ul')
     document.getElementById('displayitem').appendChild(ulList)
     //display title
     const listTitle = document.createElement('li')
     listTitle.innerHTML = data[i].title
     ulList.appendChild(listTitle)
+    
     //price
     const listPrice = document.createElement('li')
     listPrice.textContent = data[i].price
@@ -35,11 +38,14 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
     listImg.appendChild(showImg)
     // create delete button for todo
     
-    const li = document.createElement('li')
     const button = document.createElement('button')
-    button.textContent = "Delete"
-    li.appendChild(button)
-    ulList.appendChild(li) 
+    button.textContent = ""
+    ulList.appendChild(button)
+    const space = document.createElement('br')
+    
+    
+    // ulList.appendChild(li)
+
     button.setAttribute('id', data[i]._id)
     button.setAttribute('class', 'deletebutton')
     //create striked list for completed Todos
@@ -47,9 +53,8 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
         listTitle.innerHTML = `<s class="complete">${data[i].title}<s/>`
         listPrice.innerHTML = `<s class="complete">${data[i].price}<s/>`
         listDescription.innerHTML = `<s class="complete">${data[i].description}<s/>`
-        
     }
-    
+    // create checkbox with label
     const checkBox = document.createElement('input')
     checkBox.setAttribute('type', 'checkbox')
     checkBox.setAttribute('value', data[i]._id)
@@ -61,6 +66,7 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
     checkBox.setAttribute('class', 'checkboxes')
     ulList.appendChild(checkBoxText)
     ulList.appendChild(checkBox)
+    checkBoxText.prepend(space)
     
     const breakText = document.createElement('br')// add break to put element at bottom of list
     ulList.appendChild(breakText)
@@ -70,6 +76,7 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
     // editButton.setAttribute('id', data[i]._id + "0")
     // ulList.appendChild(editButton)
     
+    //create delete button callback function
     const removeButton = document.getElementById(data[i]._id)
     
     removeButton.addEventListener('click', e => {//why can i not assign more than listener in the loop?

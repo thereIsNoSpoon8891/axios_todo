@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Manage your Todo list</h1>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                My To-do list
+            </text>
+        </svg>
+    </div>
         
             <form name="todolist" class="inputform"> 
                 <input type="text" placeholder="Title" name="title" class="inputfields" required>
-                <input type="text" placeholder="Price" name="price" class="inputfields">
+                <input type="number" placeholder="Price" name="price" class="inputfields">
                 <input type="text" placeholder="Description" name="description" class="inputfields">
                 <input type="text" placeholder="Image URL" name="img" class="inputfields">
                 <button class="add">Add item to list</button>

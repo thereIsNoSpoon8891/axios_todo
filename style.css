@@ -1,21 +1,23 @@
-.complete{
-    color: black;
-    opacity: 40%;
-}
+
 
 .add {
-    color: rgb(244, 244, 244);
-    background-color: rgb(40, 184, 40);
-    border-radius: 20%;
+    font-family: arial;
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
     
 }
 
 .add:hover{
-    background-color: rgb(0, 255, 21);
-    border-color:   rgb(0, 255, 21);
-    -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-    color:  rgb(0, 255, 21);
+    color: #14396A !important;
+  background: #468CCF;
+  background: linear-gradient(to top, #468CCF, #63B8EE);
 }
 
 .inputfields{
@@ -23,15 +25,20 @@
 }
 
 .deletebutton {
-    background-color: brown;
-    color: blanchedalmond;
-    border-color:  brown ;
+     background-color: brown;
+     height: 25px;
+     width: 25px;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    padding: 15px;
+    -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
 
 .deletebutton:hover{
-    background-color: brown;
+    background-color: rgb(187, 84, 84);
     color: brown;
-    border-color: none;
+    border-color: transparent;
     -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
@@ -44,7 +51,7 @@ ul {
 
 li::before { 
     content: "";
-    border-color: transparent #70c03b;
+    border-color: transparent #000000;
     border-style: solid;
     border-width: 0.35em 0 0.35em 0.45em;
     display: block;
@@ -61,50 +68,83 @@ label{
     font-style: italic;
 }
 
-/* h3{
-    color: #ffffff;
-    border-radius: 20%;
-    background-color: #1327db;
-    text-align: center;
-    width: fit-content;
-    margin-left: 385px;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
-h1{
-    color: #ffffff;
-    border-radius: 20%;
-    background-color: #1327db;
-    text-align: center;
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+    
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+    
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
 }
 
+.wrapper {background-color: #FFFFFF};
+
+
 body{
-    background-color: #dcf7f6;
+    
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%);
 }
 
 .submit{
-    border-radius: 10%;
-    margin-left: 410px;
-    height: 100px;
-    width: 150px;
-    font-family: fantasy;
-    font-size: larger;
+    font-family: arial;
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+    margin-left: 390px;
 }
 
 .submit:hover{
-    color: aliceblue;
-    background-color: rgb(99, 53, 235);
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
 }
 
 ul{
-    background-color: rgb(209, 208, 207);
-    padding-bottom: 5px;
+    font-family: arial;
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
     width: fit-content;
-    border-radius: 10%;
-    padding-left: 30px;
     margin-left: 350px;
 }
 .inputform{
     margin-left: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
