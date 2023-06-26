@@ -88,12 +88,14 @@ svg text {
 	}
 }
 
-.wrapper {background-color: #FFFFFF};
+.wrapper {
+    background-color: #FFFFFF; 
+    border-radius: 20px;
+}
 
 
 body{
-    
-    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%);
+    background: #cbe7f9;
 }
 
 .submitcontainer{
@@ -109,13 +111,13 @@ body{
     font-size: 14px;
     text-shadow: 1px 1px 0px #7CACDE;
     box-shadow: 1px 1px 1px #BEE2F9;
-    padding: 10px 25px;
+    padding: 5px 5px;
     border-radius: 10px;
     border: 2px solid #3866A3;
     background: #63B8EE;
     background: linear-gradient(to top, #63B8EE, #468CCF);
     height: 56px;  
-    width: 170px;
+    width: 180px;
     
     
 }
