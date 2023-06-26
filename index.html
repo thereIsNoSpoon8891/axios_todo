@@ -15,23 +15,25 @@
             </text>
         </svg>
     </div>
-        
-            <form name="todolist" class="inputform"> 
-                <input type="text" placeholder="Title" name="title" class="inputfields" required>
-                <input type="number" placeholder="Price" name="price" class="inputfields">
-                <input type="text" placeholder="Description" name="description" class="inputfields">
-                <input type="text" placeholder="Image URL" name="img" class="inputfields">
-                <button class="add">Add item to list</button>
-            </form>
-
-    <form name="checkboxes">
-        <div id="displayitem"></div>
-            
-        <button class="submit">Submit completed Todos</button>
-    </form>
-    <br>
     
+    <form name="todolist" class="inputform"> 
+        <input type="text" placeholder="Title" name="title" class="inputfields" required>
+        <input type="number" placeholder="Price" name="price" class="inputfields">
+        <input type="text" placeholder="Description" name="description" class="inputfields">
+        <input type="text" placeholder="Image URL" name="img" class="inputfields">
+        <button class="add">Add item to list</button>
+    </form>
+    
+    <div class="container" id="displayitem">       
+        <form name="checkboxes">
+        </form>
+    </div>
+
+    <div class="submitcontainer">
+        <button class="submit">Submit completed To-dos</button>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>

@@ -33,7 +33,8 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
     // display image
     const listImg = document.createElement('li')
     const showImg = document.createElement('img')
-    showImg.setAttribute('src', data[i].imgUrl) 
+    showImg.setAttribute('src', data[i].imgUrl)
+    showImg.setAttribute('width', '50') 
     ulList.appendChild(listImg)
     listImg.appendChild(showImg)
     // create delete button for todo
@@ -147,7 +148,8 @@ listCheck.addEventListener("submit", e => {
             el.removeChild(el.firstChild)
         }
     }
-    
+
+
     getData()
     
     
