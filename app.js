@@ -8,13 +8,11 @@
 }
 
 function listData(data){
-    //    document.getElementById('displayitem').innerHTML = ""
-    clearList()
+        document.getElementById('displayitem').innerHTML = ""
+    // clearList()
 
 for (i = 0; i < data.length; i++){// loop through the array of objects and append them to the DOM
     
-    
-
     const ulList = document.createElement('ul')
     document.getElementById('displayitem').appendChild(ulList)
     //display title
@@ -51,9 +49,9 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
     button.setAttribute('class', 'deletebutton')
     //create striked list for completed Todos
     if (data[i].completed){// displays text with strike if todo completed: true
-        listTitle.innerHTML = `<s class="complete">${data[i].title}<s/>`
-        listPrice.innerHTML = `<s class="complete">${data[i].price}<s/>`
-        listDescription.innerHTML = `<s class="complete">${data[i].description}<s/>`
+        listTitle.innerHTML = `<s>${data[i].title}<s/>`
+        listPrice.innerHTML = `<s>${data[i].price}<s/>`
+        listDescription.innerHTML = `<s>${data[i].description}<s/>`
     }
     // create checkbox with label
     const checkBox = document.createElement('input')
@@ -88,21 +86,10 @@ for (i = 0; i < data.length; i++){// loop through the array of objects and appen
         .catch(error => console.log(error))
         
         })
-    } addEdit(data)
+    } 
 }
 
-function addEdit (data){
-    for(i = 0; i < data.length; i++){
-        const editButtons = document.getElementById(data[i]._id + "0")
-        
-        editButtons.addEventListener('click', e => {
-            e.preventDefault()
-            editButtons.textContent = `Save`
-            editButtons.setAttribute('id', 'clickedbutton')
-            
-        })
-    }
-}
+
 
 const todoList = document.todolist
 
@@ -128,7 +115,9 @@ todoList.addEventListener("submit", e => {
 
 const listCheck = document.checkboxes
 
-listCheck.addEventListener("submit", e => {
+const submit = document.getElementById('submitcomplete')
+
+submit.addEventListener("click", e => {
     e.preventDefault()
     // alert('test')
     for(i = 0; i < listCheck.putlist.length; i++){

@@ -28,7 +28,13 @@
 }
 
 .inputfields{
-    border-radius: 20%;
+    border-radius: 20px;
+    border-style:hidden;
+    height: 35px;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
 .deletebutton {
@@ -98,12 +104,7 @@ body{
     background: #cbe7f9;
 }
 
-.submitcontainer{
-   text-align: right;
-    position: fixed;
-    bottom: 0;
-    right:0;
-}
+
 
 .submit{
     font-family: arial;
@@ -118,7 +119,10 @@ body{
     background: linear-gradient(to top, #63B8EE, #468CCF);
     height: 56px;  
     width: 180px;
-    
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right:0;
     
 }
 
